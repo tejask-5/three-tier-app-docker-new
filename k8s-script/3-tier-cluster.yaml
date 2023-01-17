@@ -1,0 +1,35 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: 3-tier-cbc
+  region: ap-southeast-1
+
+privateCluster:
+  enabled: true
+  additionalEndpointServices:
+  - "autoscaling"
+
+vpc:
+  subnets:
+    private:
+      frontend-az1:
+        id: subnet-09ce085f9d58c82d7
+      backend-az1:
+        id: subnet-00a3849e2ea94267d
+
+managedNodeGroups:
+- name: frontend
+  instanceType: m5.large
+  labels: { role: frontend }
+  desiredCapacity: 2
+  privateNetworking: true
+  subnets:
+    - frontend-az1
+- name: backend
+  instanceType: m5.large
+  labels: { role: backend }
+  desiredCapacity: 2
+  privateNetworking: true
+  subnets:
+    - backend-az1
