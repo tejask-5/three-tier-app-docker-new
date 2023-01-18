@@ -8,6 +8,6 @@ spec:
     app: frontend 
   ports:
     - name: "http"
-      port: 443
+      port: 80
       targetPort: 5001 
       nodePort: 31080 
