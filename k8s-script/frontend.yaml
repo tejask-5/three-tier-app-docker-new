@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: ibsina/frontend-demo  
+        image: ibsina/frontend-2 
         ports:
         - containerPort: 80
