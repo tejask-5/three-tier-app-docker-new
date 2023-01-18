@@ -8,6 +8,6 @@ spec:
     app: backend 
   ports:
     - name: "http"
-      port: 443
+      port: 80
       targetPort: 5000 
       nodePort: 31500
