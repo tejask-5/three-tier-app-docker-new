@@ -18,4 +18,4 @@ spec:
       - name: frontend
         image: ibsina/frontend-2 
         ports:
-        - containerPort: 80
+        - containerPort: 443
