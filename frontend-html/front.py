@@ -27,7 +27,7 @@ def addrec():
 		username = request.form['username']
 		password = request.form['password']
 		here=request.form
-		requests.post('http://seahk-is-fwb-internal-5cf4808a9027dc93.elb.ap-southeast-1.amazonaws.com/registration',json=dict(here),verify=False)
+		requests.post('http://seahk-is-fwb-internal-5cf4808a9027dc93.elb.ap-southeast-1.amazonaws.com/registration',json=dict(here))
 	return render_template('thanks.html')
 
 @app.route("/chkrec", methods=['GET','POST'])
