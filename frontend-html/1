@@ -3,6 +3,6 @@ RUN mkdir /home/ubuntu/code
 WORKDIR /code
 ADD requirements.txt /home/ubuntu/code/
 RUN pip3 install -r requirements.txt
-ADD . /code/
+ADD . /home/ubuntu/code/
 EXPOSE 5001
 CMD ["python3", "front.py" ]
