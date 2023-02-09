@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>Registration</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css" />
+		<!--[if IE 7]>
+			<link rel="stylesheet" href="css/ie7.css" type="text/css" />
+		<![endif]-->
+	</head>
+	<body>
+		<div class="page">
+			<div class="header">
+				<a href="/" id="logo"><img src="{{ url_for('static', filename='images/fortinet_logo.png') }}" alt=""/></a>
+				<ul>
+					<li><a href="/">Home</a></li>
+					<li><a href="login">Login</a></li>
+					<li class="selected"><a href="registration">Registration</a></li>
+				</ul>
+			</div>
+			<div class="body">
+				<form action = "{{ url_for('addrec') }}" method = "POST">
+					<h3>Registration Form</h3>
+					<p>
+						Firstname:<br>
+						<input type = "text" name = "firstname" /></br>
+						Lastname:<br>
+						<input type = "text" name = "lastname" /></br>
+						Email:<br>
+						<input type = "text" name = "email" /></br><br>
+						Username:<br>
+						<input type = "text" name = "username" /></br>
+						Password:<br>
+						<input type = "password" name = "password" id="myInput" /></br>
+						<input type="checkbox" onclick="myFunction()">Show Password
+		   				<br><br><input type = "submit" value = "Submit" /><br>
+					</p>
+					<script>
+						function myFunction() {
+						  var x = document.getElementById("myInput");
+						  if (x.type === "password") {
+							x.type = "text";
+						  } else {
+							x.type = "password";
+						  }
+						}
+					</script>
+				</form>
+			</div>
+			<div class="footer">
+				<ul>
+					<li><a href="/">Home</a></li>
+					<li><a href="login">Login</a></li>
+					<li><a href="registration">Registration</a></li>
+				</ul>
+				<p>&#169; Copyright &#169; 2023 Fortinet, Inc. All Rights Reserved.</p>
+				<div class="connect">
+					<a href="http://facebook.com/Fortinet" id="facebook">facebook</a>
+					<a href="http://twitter.com/Fortinet" id="twitter">twitter</a>
+					<a href="http://www.youtube.com/Fortinet" id="vimeo">vimeo</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>  
