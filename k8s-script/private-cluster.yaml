@@ -21,14 +21,14 @@ vpc:
 
 managedNodeGroups:
 - name: frontend-az1
-  instanceType: m5.large
+  instanceType: t3.small
   labels: { role: frontend }
   desiredCapacity: 1
   privateNetworking: true
   subnets:
   - subnet-09ce085f9d58c82d7
 - name: backend-az1
-  instanceType: m5.large
+  instanceType: t3.small
   labels: { role: backend }
   desiredCapacity: 1
   privateNetworking: true
