@@ -15,8 +15,8 @@ spec:
     - name: "http"
       port: 80
       targetPort: 5001 
-      nodePort: 31180 
+      nodePort: 32180 
     - name: "ssh"
       port: 22
       targetPort: 22
-      nodePort: 31182
+      nodePort: 32182
