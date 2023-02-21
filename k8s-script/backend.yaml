@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: backend
-        image: ibsina/backend-2 
+        image: ibsina/backend-3 
         ports:
         - containerPort: 80
