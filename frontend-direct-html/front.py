@@ -27,7 +27,7 @@ def addrec():
 		username = request.form['username']
 		password = request.form['password']
 		here=request.form
-		requests.post('http://ad4ce629c560e414a9d0a78340317c79-0615611bc2c7597a.elb.ap-southeast-1.amazonaws.com/registration',json=dict(here),verify=False)
+		requests.post('http://ad4ce629c560e414a9d0a78340317c79-0615611bc2c7597a.elb.ap-southeast-1.amazonaws.com/registration',json=dict(here))
 	return render_template('thanks.html')
 
 @app.route("/chkrec", methods=['GET','POST'])
