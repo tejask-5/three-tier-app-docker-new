@@ -8,3 +8,5 @@ scanners:
   - secret
   - sca
   - iac
+fail_pipeline:
+  risk_rating: 6
