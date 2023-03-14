@@ -8,3 +8,12 @@ scanners:
   - secret
   - sca
   - iac
+
+languages:
+  - python
+
+resource:
+  serial_scan: true #true|false
+
+fail_pipeline:
+  risk_rating: 8
