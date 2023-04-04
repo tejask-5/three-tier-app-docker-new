@@ -1,6 +1,6 @@
 FROM python:3
 RUN apt-get update
-RUN apt-get install openssh-server sudo net-tools iputils-ping -y
+RUN apt-get install openssh-server sudo net-tools -y
 RUN useradd -rm -d /home/ubuntu -s /bin/bash -g root -G root -u 1000 fwb
 RUN echo 'fwb:fwb1234' | chpasswd
 RUN service ssh start
