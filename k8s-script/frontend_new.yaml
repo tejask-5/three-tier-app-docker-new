@@ -1,9 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: frontend-3-deployment
+  name: frontend-deployment
   labels:
-    app: frontend-3
+    app: frontend
 spec:
   replicas: 1
   selector:
@@ -15,7 +15,7 @@ spec:
         app: frontend
     spec:
       containers:
-      - name: frontend-3
-        image: ibsina/frontend-3
+      - name: frontend
+        image: ibsina/fsi-3-tier-frontend
         ports:
         - containerPort: 80

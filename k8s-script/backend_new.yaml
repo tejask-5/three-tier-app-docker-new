@@ -1,9 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: backend-3-deployment
+  name: backend-deployment
   labels:
-    app: backend-3
+    app: backend
 spec:
   replicas: 2
   selector:
@@ -15,7 +15,7 @@ spec:
         app: backend
     spec:
       containers:
-      - name: backend-3
-        image: ibsina/backend-3
+      - name: backend
+        image: ibsina/fsi-3-tier-backend 
         ports:
         - containerPort: 80
