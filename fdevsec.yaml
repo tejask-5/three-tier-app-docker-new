@@ -6,12 +6,17 @@ id:
 
 scanners:
   - sast
+  - dast
   - secret
   - sca
   - iac
 
 languages:
   - python
+
+dast:
+  url: https://nehr.fortiseahk.com
+  full_scan: true
 
 resource:
   serial_scan: true #true|false
