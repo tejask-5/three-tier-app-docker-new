@@ -20,6 +20,3 @@ dast:
 
 resource:
   serial_scan: true #true|false
-
-fail_pipeline:
-  risk_rating: 9
