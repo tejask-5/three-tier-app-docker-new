@@ -15,7 +15,7 @@ languages:
   - python
 
 dast:
-  url: https://nehr.fortiseahk.com
+  url: http://aacb0db6e21b84642b86e68a7882086e-3d3c1d6eb9ee45cb.elb.ap-southeast-1.amazonaws.com
   full_scan: true
 
 resource:
