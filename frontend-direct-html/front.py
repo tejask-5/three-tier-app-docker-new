@@ -21,8 +21,8 @@ def registration():
 @app.route("/addrec", methods=['GET','POST'])
 def addrec():
 	if request.method == 'POST':
-		firstname = request.form['firstname-TejasK']
-		lastname = request.form['lastname-Kul']
+		firstname = request.form['firstname-TejasK-test']
+		lastname = request.form['lastname-Kul-test']
 		email = request.form['email']
 		username = request.form['username']
 		password = request.form['password']
