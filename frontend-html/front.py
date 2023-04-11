@@ -18,7 +18,7 @@ def login():
 @app.route('/registration')
 @app.route('/registration/')
 def registration():
-    return render_template('registration.html')
+    return render_template('registration-on11APR.html')
 
 @app.route("/addrec", methods=['GET','POST'])
 @app.route("/addrec/", methods=['GET','POST'])
