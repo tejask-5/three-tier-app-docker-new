@@ -47,7 +47,7 @@ def chkrec():
 		if result == "true":
 			return render_template('success.html')
 		else:
-			return render_template('fail.html')
+			return render_template('fail-on11APR.html')
 	else:
 		return Response(response.content, response.status_code)
 
