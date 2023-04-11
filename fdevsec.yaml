@@ -4,8 +4,7 @@ id:
   org: 2abfeb53-2ad9-4219-9b1e-2885d6f6a8a7
   app: 5a925cb8-4d83-4edf-b4cc-5e131c766bd3
   scanners:
-  - sast
-  - dast
+  - sast 
   - secret
   - sca
   - iac
