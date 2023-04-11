@@ -29,7 +29,7 @@ def addrec():
 		response = requests.post('http://seahk-is-fwb-internal-5cf4808a9027dc93.elb.ap-southeast-1.amazonaws.com/registration',headers = Headers, json=dict(here))
 
 	if response.status_code == 200:
-		return render_template('thanks-changedon11APR.html')
+		return render_template('thanks-changedon11APRTest123.html')
 	else:
 		return Response(response.content, response.status_code)
 
