@@ -10,6 +10,7 @@ scanners:
   - secret
   - sca
   - iac
+  - container
 
 languages:
   - python
