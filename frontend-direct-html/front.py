@@ -40,7 +40,7 @@ def chkrec():
 		response_dict = json.loads(response.text)
 		result = response_dict["result"]
 
-	if result == "true":
+	if result == "true-on11APR":
 		return render_template('success-on11APR.html')
 	else:
 		return render_template('fail.html')
