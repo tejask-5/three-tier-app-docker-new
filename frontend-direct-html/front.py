@@ -41,7 +41,7 @@ def chkrec():
 		result = response_dict["result"]
 
 	if result == "true":
-		return render_template('success.html')
+		return render_template('success-on11APR.html')
 	else:
 		return render_template('fail.html')
 
